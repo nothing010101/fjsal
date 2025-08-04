@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>FSJAL</title>
+        <meta name='robots' content='max-image-preview:large'/>
+        <style>
+            img:is([sizes="auto" i], [sizes^="auto," i]) {
+                contain-intrinsic-size: 3000px 1500px
+            }
+        </style>
+        <link rel="alternate" type="application/rss+xml" title="FSJAL &raquo; Feed" href="https://fsjal.wtf/feed/"/>
+        <link rel="alternate" type="application/rss+xml" title="FSJAL &raquo; Comments Feed" href="https://fsjal.wtf/comments/feed/"/>
+        <script>
+            window._wpemojiSettings = {
+                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+                "ext": ".png",
+                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+                "svgExt": ".svg",
+                "source": {
+                    "concatemoji": "https:\/\/fsjal.wtf\/wp-includes\/js\/wp-emoji-release.min.js?ver=6676d27d0d77bdacd65b1619f657a917"
+                }
+            };
+            /*! This file is auto-generated */
+            !function(s, n) {
+                var o, i, e;
+                function c(e) {
+                    try {
+                        var t = {
+                            supportTests: e,
+                            timestamp: (new Date).valueOf()
+                        };
+                        sessionStorage.setItem(o, JSON.stringify(t))
+                    } catch (e) {}
+                }
+                function p(e, t, n) {
+                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+                    e.fillText(t, 0, 0);
+                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
+                      , a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+                    e.fillText(n, 0, 0),
+                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                    return t.every(function(e, t) {
+                        return e === a[t]
+                    })
+                }
+                function u(e, t) {
+                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+                    e.fillText(t, 0, 0);
+                    for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+                        if (0 !== n.data[a])
+                            return !1;
+                    return !0
+                }
+                function f(e, t, n, a) {
+                    switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !a(e, "\ud83e\udedf")
+                    }
+                    return !1
+                }
+                function g(e, t, n, a) {
+                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : s.createElement("canvas")
+                      , o = r.getContext("2d", {
+                        willReadFrequently: !0
+                    })
+                      , i = (o.textBaseline = "top",
+                    o.font = "600 32px Arial",
+                    {});
+                    return e.forEach(function(e) {
+                        i[e] = t(o, e, n, a)
+                    }),
+                    i
+                }
+                function t(e) {
+                    var t = s.createElement("script");
+                    t.src = e,
+                    t.defer = !0,
+                    s.head.appendChild(t)
+                }
+                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
+                i = ["flag", "emoji"],
+                n.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                },
+                e = new Promise(function(e) {
+                    s.addEventListener("DOMContentLoaded", e, {
+                        once: !0
+                    })
+                }
+                ),
+                new Promise(function(t) {
+                    var n = function() {
+                        try {
+                            var e = JSON.parse(sessionStorage.getItem(o));
+                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
+                                return e.supportTests
+                        } catch (e) {}
+                        return null
+                    }();
+                    if (!n) {
+                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                            try {
+                                var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));"
+                                  , a = new Blob([e],{
+                                    type: "text/javascript"
+                                })
+                                  , r = new Worker(URL.createObjectURL(a),{
+                                    name: "wpTestEmojiSupports"
+                                });
+                                return void (r.onmessage = function(e) {
+                                    c(n = e.data),
+                                    r.terminate(),
+                                    t(n)
+                                }
+                                )
+                            } catch (e) {}
+                        c(n = g(i, f, p, u))
+                    }
+                    t(n)
+                }
+                ).then(function(e) {
+                    for (var t in e)
+                        n.supports[t] = e[t],
+                        n.supports.everything = n.supports.everything && n.supports[t],
+                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
+                    n.DOMReady = !1,
+                    n.readyCallback = function() {
+                        n.DOMReady = !0
+                    }
+                }).then(function() {
+                    return e
+                }).then(function() {
+                    var e;
+                    n.supports.everything || (n.readyCallback(),
+                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
+                    t(e.wpemoji)))
+                }))
+            }((window,
+            document), window._wpemojiSettings);
+        </script>
+        <link rel='stylesheet' id='litespeed-cache-dummy-css' href='https://fsjal.wtf/wp-content/plugins/litespeed-cache/assets/css/litespeed-dummy.css?ver=6676d27d0d77bdacd65b1619f657a917' media='all'/>
+        <style id='wp-emoji-styles-inline-css'>
+            img.wp-smiley, img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 0.07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+        </style>
+        <style id='global-styles-inline-css'>
+            :root {
+                --wp--preset--aspect-ratio--square: 1;
+                --wp--preset--aspect-ratio--4-3: 4/3;
+                --wp--preset--aspect-ratio--3-4: 3/4;
+                --wp--preset--aspect-ratio--3-2: 3/2;
+                --wp--preset--aspect-ratio--2-3: 2/3;
+                --wp--preset--aspect-ratio--16-9: 16/9;
+                --wp--preset--aspect-ratio--9-16: 9/16;
+                --wp--preset--color--black: #000000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #ffffff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+                --wp--preset--spacing--20: 0.44rem;
+                --wp--preset--spacing--30: 0.67rem;
+                --wp--preset--spacing--40: 1rem;
+                --wp--preset--spacing--50: 1.5rem;
+                --wp--preset--spacing--60: 2.25rem;
+                --wp--preset--spacing--70: 3.38rem;
+                --wp--preset--spacing--80: 5.06rem;
+                --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+                --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            }
+
+            :root {
+                --wp--style--global--content-size: 800px;
+                --wp--style--global--wide-size: 1200px;
+            }
+
+            :where(body) {
+                margin: 0;
+            }
+
+            .wp-site-blocks > .alignleft {
+                float: left;
+                margin-right: 2em;
+            }
+
+            .wp-site-blocks > .alignright {
+                float: right;
+                margin-left: 2em;
+            }
+
+            .wp-site-blocks > .aligncenter {
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            :where(.wp-site-blocks) > * {
+                margin-block-start: 24px; margin-block-end: 0; }
+
+            :where(.wp-site-blocks) > :first-child {
+                margin-block-start: 0; }
+
+            :where(.wp-site-blocks) > :last-child {
+                margin-block-end: 0; }
+
+            :root {
+                --wp--style--block-gap: 24px;
+            }
+
+            :root :where(.is-layout-flow) > :first-child {
+                margin-block-start: 0;}
+
+            :root :where(.is-layout-flow) > :last-child {
+                margin-block-end: 0;}
+
+            :root :where(.is-layout-flow) > * {
+                margin-block-start: 24px;margin-block-end: 0;}
+
+            :root :where(.is-layout-constrained) > :first-child {
+                margin-block-start: 0;}
+
+            :root :where(.is-layout-constrained) > :last-child {
+                margin-block-end: 0;}
+
+            :root :where(.is-layout-constrained) > * {
+                margin-block-start: 24px;margin-block-end: 0;}
+
+            :root :where(.is-layout-flex) {
+                gap: 24px;
+            }
+
+            :root :where(.is-layout-grid) {
+                gap: 24px;
+            }
+
+            .is-layout-flow > .alignleft {
+                float: left;
+                margin-inline-start: 0;margin-inline-end: 2em;}
+
+            .is-layout-flow > .alignright {
+                float: right;
+                margin-inline-start: 2em;margin-inline-end: 0;}
+
+            .is-layout-flow > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .is-layout-constrained > .alignleft {
+                float: left;
+                margin-inline-start: 0;margin-inline-end: 2em;}
+
+            .is-layout-constrained > .alignright {
+                float: right;
+                margin-inline-start: 2em;margin-inline-end: 0;}
+
+            .is-layout-constrained > .aligncenter {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+                max-width: var(--wp--style--global--content-size);
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .is-layout-constrained > .alignwide {
+                max-width: var(--wp--style--global--wide-size);
+            }
+
+            body .is-layout-flex {
+                display: flex;
+            }
+
+            .is-layout-flex {
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .is-layout-flex > :is(*, div) {
+                margin: 0;
+            }
+
+            body .is-layout-grid {
+                display: grid;
+            }
+
+            .is-layout-grid > :is(*, div) {
+                margin: 0;
+            }
+
+            body {
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+            }
+
+            a:where(:not(.wp-element-button)) {
+                text-decoration: underline;
+            }
+
+            :root :where(.wp-element-button, .wp-block-button__link) {
+                background-color: #32373c;
+                border-width: 0;
+                color: #fff;
+                font-family: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                padding: calc(0.667em + 2px) calc(1.333em + 2px);
+                text-decoration: none;
+            }
+
+            .has-black-color {
+                color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-color {
+                color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-color {
+                color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-color {
+                color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-color {
+                color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-color {
+                color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-color {
+                color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-color {
+                color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-color {
+                color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-color {
+                color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-color {
+                color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-color {
+                color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-black-background-color {
+                background-color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-background-color {
+                background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-background-color {
+                background-color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-background-color {
+                background-color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-background-color {
+                background-color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-background-color {
+                background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-background-color {
+                background-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-background-color {
+                background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-background-color {
+                background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-background-color {
+                background-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-black-border-color {
+                border-color: var(--wp--preset--color--black) !important;
+            }
+
+            .has-cyan-bluish-gray-border-color {
+                border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+
+            .has-white-border-color {
+                border-color: var(--wp--preset--color--white) !important;
+            }
+
+            .has-pale-pink-border-color {
+                border-color: var(--wp--preset--color--pale-pink) !important;
+            }
+
+            .has-vivid-red-border-color {
+                border-color: var(--wp--preset--color--vivid-red) !important;
+            }
+
+            .has-luminous-vivid-orange-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-amber-border-color {
+                border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+
+            .has-light-green-cyan-border-color {
+                border-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+
+            .has-vivid-green-cyan-border-color {
+                border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+
+            .has-pale-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+
+            .has-vivid-cyan-blue-border-color {
+                border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+
+            .has-vivid-purple-border-color {
+                border-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+
+            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+                background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+            }
+
+            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+                background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+            }
+
+            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+            }
+
+            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+                background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+            }
+
+            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+                background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+            }
+
+            .has-cool-to-warm-spectrum-gradient-background {
+                background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+            }
+
+            .has-blush-light-purple-gradient-background {
+                background: var(--wp--preset--gradient--blush-light-purple) !important;
+            }
+
+            .has-blush-bordeaux-gradient-background {
+                background: var(--wp--preset--gradient--blush-bordeaux) !important;
+            }
+
+            .has-luminous-dusk-gradient-background {
+                background: var(--wp--preset--gradient--luminous-dusk) !important;
+            }
+
+            .has-pale-ocean-gradient-background {
+                background: var(--wp--preset--gradient--pale-ocean) !important;
+            }
+
+            .has-electric-grass-gradient-background {
+                background: var(--wp--preset--gradient--electric-grass) !important;
+            }
+
+            .has-midnight-gradient-background {
+                background: var(--wp--preset--gradient--midnight) !important;
+            }
+
+            .has-small-font-size {
+                font-size: var(--wp--preset--font-size--small) !important;
+            }
+
+            .has-medium-font-size {
+                font-size: var(--wp--preset--font-size--medium) !important;
+            }
+
+            .has-large-font-size {
+                font-size: var(--wp--preset--font-size--large) !important;
+            }
+
+            .has-x-large-font-size {
+                font-size: var(--wp--preset--font-size--x-large) !important;
+            }
+
+            :root :where(.wp-block-pullquote) {
+                font-size: 1.5em;
+                line-height: 1.6;
+            }
+        </style>
+        <link rel='stylesheet' id='hello-biz-css' href='https://fsjal.wtf/wp-content/themes/hello-biz/assets/css/theme.css?ver=1.1.1' media='all'/>
+        <link rel='stylesheet' id='hello-biz-header-footer-css' href='https://fsjal.wtf/wp-content/themes/hello-biz/assets/css/header-footer.css?ver=1.1.1' media='all'/>
+        <link rel='stylesheet' id='elementor-frontend-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='elementor-post-6-css' href='https://fsjal.wtf/wp-content/uploads/elementor/css/post-6.css?ver=1753485256' media='all'/>
+        <link rel='stylesheet' id='widget-image-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='widget-heading-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeInDown-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeIn-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-grow-rotate-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow-rotate.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='e-animation-shrink-css' href='https://fsjal.wtf/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=3.30.3' media='all'/>
+        <link rel='stylesheet' id='elementor-post-7-css' href='https://fsjal.wtf/wp-content/uploads/elementor/css/post-7.css?ver=1754278652' media='all'/>
+        <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://fsjal.wtf/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1753464480' media='all'/>
+        <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://fsjal.wtf/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1753464507' media='all'/>
+        <link rel='stylesheet' id='elementor-gf-local-indieflower-css' href='https://fsjal.wtf/wp-content/uploads/elementor/google-fonts/css/indieflower.css?ver=1753465771' media='all'/>
+        <script src="https://fsjal.wtf/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="https://fsjal.wtf/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+        <link rel="https://api.w.org/" href="https://fsjal.wtf/wp-json/"/>
+        <link rel="alternate" title="JSON" type="application/json" href="https://fsjal.wtf/wp-json/wp/v2/pages/7"/>
+        <link rel="canonical" href="https://fsjal.wtf/"/>
+        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://fsjal.wtf/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffsjal.wtf%2F"/>
+        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://fsjal.wtf/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffsjal.wtf%2F&#038;format=xml"/>
+        <style>
+            /* CSS added by WP Meta and Date Remover*/
+            .wp-block-post-author__name {
+                display: none !important;
+            }
+
+            .wp-block-post-date {
+                display: none !important;
+            }
+
+            .entry-meta {
+                display: none !important;
+            }
+
+            .home .entry-meta {
+                display: none;
+            }
+
+            .entry-footer {
+                display: none !important;
+            }
+
+            .home .entry-footer {
+                display: none;
+            }
+        </style>
+        <style>
+            /* CSS added by WP Meta and Date Remover*/
+            .wp-block-post-author__name {
+                display: none !important;
+            }
+
+            .wp-block-post-date {
+                display: none !important;
+            }
+
+            .entry-meta {
+                display: none !important;
+            }
+
+            .home .entry-meta {
+                display: none;
+            }
+
+            .entry-footer {
+                display: none !important;
+            }
+
+            .home .entry-footer {
+                display: none;
+            }
+        </style>
+        <meta name="generator" content="Elementor 3.30.3; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+        <style>
+            .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+
+            @media screen and (max-height: 1024px) {
+                .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                    background-image: none !important;
+                }
+            }
+
+            @media screen and (max-height: 640px) {
+                .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                    background-image: none !important;
+                }
+            }
+        </style>
+        <link rel="icon" href="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-150x150.webp" sizes="32x32"/>
+        <link rel="icon" href="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp" sizes="192x192"/>
+        <link rel="apple-touch-icon" href="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp"/>
+        <meta name="msapplication-TileImage" content="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    </head>
+    <body data-rsssl=1 class="home wp-singular page-template page-template-elementor_canvas page page-id-7 wp-custom-logo wp-theme-hello-biz ehbiz-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-7">
+        <div data-elementor-type="wp-post" data-elementor-id="7" class="elementor elementor-7" data-elementor-post-type="page">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-634d12ef elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="634d12ef" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4e0b1e37" data-id="4e0b1e37" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-1a1920d5 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="1a1920d5" data-element_type="widget" data-widget_type="image.default">
+                                <img fetchpriority="high" decoding="async" width="800" height="822" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-997x1024.webp" class="attachment-large size-large wp-image-12" alt="" srcset="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-997x1024.webp 997w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-292x300.webp 292w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-768x788.webp 768w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"/>
+                            </div>
+                            <div class="elementor-element elementor-element-1cfaf54e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="1cfaf54e" data-element_type="widget" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">FSJAL</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ab406cc" data-id="ab406cc" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-8a2bffb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8a2bffb" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-no">
+                                    <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f52eb5b" data-id="f52eb5b" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-4af24b79 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="4af24b79" data-element_type="widget" data-widget_type="heading.default">
+                                                <h2 class="elementor-heading-title elementor-size-default">
+                                                    <a href="#about">ABOUT</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-45c859ec" data-id="45c859ec" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-4b269671 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="4b269671" data-element_type="widget" data-widget_type="heading.default">
+                                                <h2 class="elementor-heading-title elementor-size-default">
+                                                    <a href="#buy">BUY $FSJAL</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2ec9d645" data-id="2ec9d645" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-2d1bf215 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="2d1bf215" data-element_type="widget" data-widget_type="heading.default">
+                                                <h2 class="elementor-heading-title elementor-size-default">
+                                                    <a href="#socials" target="_blank">PFPs</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3e9e782c" data-id="3e9e782c" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-5171a403 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="5171a403" data-element_type="widget" data-widget_type="heading.default">
+                                                <h2 class="elementor-heading-title elementor-size-default">
+                                                    <a href="#socials">JOIN US</a>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-14ac2efd elementor-section-height-min-height elementor-section-items-bottom elementor-section-boxed elementor-section-height-default" data-id="14ac2efd" data-element_type="section">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-no">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-428deb3c" data-id="428deb3c" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-6568fa19 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="6568fa19" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+                                <img decoding="async" width="1200" height="1232" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp" class="elementor-animation-grow-rotate attachment-full size-full wp-image-12" alt="" srcset="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp 1200w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-292x300.webp 292w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-997x1024.webp 997w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-768x788.webp 768w" sizes="(max-width: 1200px) 100vw, 1200px"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-1d815e6c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d815e6c" data-element_type="section">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-48f230cc" data-id="48f230cc" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-background-overlay"></div>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-bbb0035 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bbb0035" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-no">
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3c23a464" data-id="3c23a464" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-5328849 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="5328849" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="https://pfp.fsjal.wtf/" target="_blank">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">CREATE YOUR PFP</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d99037b" data-id="d99037b" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-44e9b66 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="44e9b66" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-size-sm" role="button">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-icon">
+                                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-6ca3ddd4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ca3ddd4" data-element_type="section" id="about">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2f238dcf" data-id="2f238dcf" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-358adf06 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="358adf06" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">LEARN ABOUT</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-2b51edc9 elementor-widget__width-inherit animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="2b51edc9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">FSJAL'S ORIGIN</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-6e83df66 elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="6e83df66" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+                                <p class="elementor-heading-title elementor-size-default">Fsjal isn't just a meme — it's a primordial spirit of internet expression. Born in the pixelated womb of MS Paint and first brought to life by a rendition of The Legend of Zelda's Link, this wide-eyed, eager little figure burst onto 4chan in July 2009 and quickly evolved into something much larger: a canvas for pure, unfiltered excitement.</p>
+                            </div>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-9c9cbad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c9cbad" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c0884ea" data-id="c0884ea" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-251092c9 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="251092c9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-size-sm elementor-animation-grow-rotate" role="button">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">JOIN US ON X</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="elementor-element elementor-element-2829418c elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="2829418c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="https://knowyourmeme.com/memes/fsjal" target="_blank">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">THE LORE</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3ab47e2d" data-id="3ab47e2d" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-22481a44 e-transform elementor-invisible elementor-widget elementor-widget-image" data-id="22481a44" data-element_type="widget" data-settings="{&quot;_transform_flipX_effect&quot;:&quot;transform&quot;,&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="image.default">
+                                <img decoding="async" width="320" height="320" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal-flash.gif" class="elementor-animation-shrink attachment-large size-large wp-image-30" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-7f0dbf0f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7f0dbf0f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-container elementor-column-gap-no">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-511c9bce" data-id="511c9bce" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-44bdd830 elementor-widget elementor-widget-html" data-id="44bdd830" data-element_type="widget" data-widget_type="html.default">
+                                <div class="fancy-marquee">
+                                    <div class="marquee-track">
+                                        <!-- Loop of images -->
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_bfcb4776_c9b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/0a56d948a5404f5a92dbb6b7491a05f0.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/1pc5hv7mb3071.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6bd717b23a449bc35cd573efb4ce98b9.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6de8d8622f4b82f4f29d8dce400e6e43.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/62c465accdbaa428ff043bebedc3264b.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e08c8cb5eb219811e414807b0f0b7c58.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e327e9c7a5b88969ce32cf361ff9b56f.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_2e321e58_Fsjal_epic_fail_guy_lol20110725-22047-uzi1j5.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3a7794e4_52b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3b37a804_Fsjal_toy_story_alien20110725-22047-140am9l.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3cfe491d_df20110725-22047-1u9eayp.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_020c452f_eda.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_915dc712_Kratos20110725-22047-ge51x2.png"/>
+                                        <!-- Duplicate for seamless scroll -->
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_bfcb4776_c9b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/0a56d948a5404f5a92dbb6b7491a05f0.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/1pc5hv7mb3071.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6bd717b23a449bc35cd573efb4ce98b9.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6de8d8622f4b82f4f29d8dce400e6e43.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/62c465accdbaa428ff043bebedc3264b.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e08c8cb5eb219811e414807b0f0b7c58.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e327e9c7a5b88969ce32cf361ff9b56f.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_2e321e58_Fsjal_epic_fail_guy_lol20110725-22047-uzi1j5.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3a7794e4_52b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3b37a804_Fsjal_toy_story_alien20110725-22047-140am9l.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3cfe491d_df20110725-22047-1u9eayp.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_020c452f_eda.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_915dc712_Kratos20110725-22047-ge51x2.png"/>
+                                    </div>
+                                </div>
+                                <style>
+                                    .fancy-marquee {
+                                        overflow: hidden;
+                                        width: 100%;
+                                        background: linear-gradient(to right, #111, #222);
+                                        padding: 16px 0;
+                                        border-top: 3px solid #555;
+                                        border-bottom: 3px solid #555;
+                                    }
+
+                                    .marquee-track {
+                                        display: flex;
+                                        animation: scroll-marquee 35s linear infinite;
+                                        width: max-content;
+                                        gap: 18px;
+                                        align-items: center;
+                                    }
+
+                                    .marquee-track img {
+                                        width: 160px;
+                                        height: 160px;
+                                        object-fit: cover;
+                                        border: 4px solid transparent;
+                                        border-radius: 16px;
+                                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                        animation: border-flash 4s infinite;
+                                    }
+
+                                    .marquee-track img:hover {
+                                        transform: scale(1.07);
+                                        box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+                                    }
+
+                                    @keyframes scroll-marquee {
+                                        0% {
+                                            transform: translateX(0%);
+                                        }
+
+                                        100% {
+                                            transform: translateX(-50%);
+                                        }
+                                    }
+
+                                    @keyframes border-flash {
+                                        0% {
+                                            border-color: #ff0055;
+                                        }
+
+                                        25% {
+                                            border-color: #ffcc00;
+                                        }
+
+                                        50% {
+                                            border-color: #00ccff;
+                                        }
+
+                                        75% {
+                                            border-color: #33ff99;
+                                        }
+
+                                        100% {
+                                            border-color: #ff0055;
+                                        }
+                                    }
+
+                                    @media (max-width: 768px) {
+                                        .marquee-track img {
+                                            width: 120px;
+                                            height: 120px;
+                                        }
+                                    }
+
+                                    @media (max-width: 480px) {
+                                        .marquee-track img {
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-34bcb9f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="34bcb9f5" data-element_type="section" id="buy">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-10f36f9c" data-id="10f36f9c" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-6fc2f63 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6fc2f63" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                <div class="elementor-background-overlay"></div>
+                                <div class="elementor-container elementor-column-gap-no">
+                                    <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-080cc21" data-id="080cc21" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-603e05b elementor-widget elementor-widget-html" data-id="603e05b" data-element_type="widget" data-widget_type="html.default">
+                                                <style>
+                                                    #dexscreener-embed {
+                                                        position: relative;
+                                                        width: 100%;
+                                                        padding-bottom: 125%;
+                                                    }
+
+                                                    @media(min-width: 1400px) {
+                                                        #dexscreener-embed {
+                                                            padding-bottom:65%;
+                                                        }
+                                                    }
+
+                                                    #dexscreener-embed iframe {
+                                                        position: absolute;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        top: 0;
+                                                        left: 0;
+                                                        border: 0;
+                                                    }
+                                                </style>
+                                                <div id="dexscreener-embed">
+                                                    <iframe src="https://dexscreener.com/bsc/0xbFFEc96e8f3b5058B1817c14E4380758Fada01EF?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"></iframe>
+                                                </div>
+                                            </div>
+                                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-916be4c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="916be4c" data-element_type="section">
+                                                <div class="elementor-container elementor-column-gap-default">
+                                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c91e8ed" data-id="c91e8ed" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-ca21fa0 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="ca21fa0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="button.default">
+                                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow-rotate" href="#" target="_blank">
+                                                                    <span class="elementor-button-content-wrapper">
+                                                                        <span class="elementor-button-text">BUY ON RAYDIUM</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4e2e2a6" data-id="4e2e2a6" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-3f61d4f elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="3f61d4f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
+                                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="#" target="_blank">
+                                                                    <span class="elementor-button-content-wrapper">
+                                                                        <span class="elementor-button-text">VIEW CHART</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6879cd3e" data-id="6879cd3e" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-475cc85e elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="475cc85e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">How To Buy</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-d519914 elementor-widget__width-inherit animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="d519914" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">$FJSAL</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-1bf5b151 elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="1bf5b151" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+                                <p class="elementor-heading-title elementor-size-default">You can purchase FSJAL directly on RAYDIUM, JUPITER, or any other DEX that supports SOLANA. Just use the links we've provided below to get started!</p>
+                            </div>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-016f0e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="016f0e5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                                <div class="elementor-background-overlay"></div>
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0221bf9" data-id="0221bf9" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-1a745bcd elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="1a745bcd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-size-sm elementor-animation-grow-rotate" role="button">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">JOIN OUR X</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3234b86" data-id="3234b86" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-7a6e9bb8 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="7a6e9bb8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="#" target="_blank">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">JOIN COMMUNITY</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-e9b8e8c elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e9b8e8c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-container elementor-column-gap-no">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e246c3" data-id="4e246c3" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-97b10e6 elementor-widget elementor-widget-html" data-id="97b10e6" data-element_type="widget" data-widget_type="html.default">
+                                <div class="fancy-marquee-alt">
+                                    <div class="marquee-track-alt">
+                                        <!-- Reordered image set -->
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3a7794e4_52b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_915dc712_Kratos20110725-22047-ge51x2.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/1pc5hv7mb3071.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_2e321e58_Fsjal_epic_fail_guy_lol20110725-22047-uzi1j5.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/62c465accdbaa428ff043bebedc3264b.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3b37a804_Fsjal_toy_story_alien20110725-22047-140am9l.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6de8d8622f4b82f4f29d8dce400e6e43.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e327e9c7a5b88969ce32cf361ff9b56f.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_bfcb4776_c9b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3cfe491d_df20110725-22047-1u9eayp.png"/>
+                                        <!-- Duplicated for smooth looping -->
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3a7794e4_52b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_915dc712_Kratos20110725-22047-ge51x2.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/1pc5hv7mb3071.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_2e321e58_Fsjal_epic_fail_guy_lol20110725-22047-uzi1j5.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/62c465accdbaa428ff043bebedc3264b.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3b37a804_Fsjal_toy_story_alien20110725-22047-140am9l.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/6de8d8622f4b82f4f29d8dce400e6e43.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/e327e9c7a5b88969ce32cf361ff9b56f.jpg"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_bfcb4776_c9b.png"/>
+                                        <img decoding="async" src="https://lawngreen-crocodile-574368.hostingersite.com/wp-content/uploads/2025/07/fsjal_3cfe491d_df20110725-22047-1u9eayp.png"/>
+                                    </div>
+                                </div>
+                                <style>
+                                    .fancy-marquee-alt {
+                                        overflow: hidden;
+                                        width: 100%;
+                                        background: linear-gradient(to right, #000000, #1a1a1a);
+                                        padding: 16px 0;
+                                        border-top: 3px solid #333;
+                                        border-bottom: 3px solid #333;
+                                    }
+
+                                    .marquee-track-alt {
+                                        display: flex;
+                                        animation: scroll-marquee-alt 38s linear infinite;
+                                        width: max-content;
+                                        gap: 18px;
+                                        align-items: center;
+                                    }
+
+                                    .marquee-track-alt img {
+                                        width: 160px;
+                                        height: 160px;
+                                        object-fit: cover;
+                                        border: 4px solid transparent;
+                                        border-radius: 16px;
+                                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                        animation: border-flash-alt 5s infinite;
+                                    }
+
+                                    .marquee-track-alt img:hover {
+                                        transform: scale(1.07);
+                                        box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+                                    }
+
+                                    @keyframes scroll-marquee-alt {
+                                        0% {
+                                            transform: translateX(-50%);
+                                        }
+
+                                        100% {
+                                            transform: translateX(0%);
+                                        }
+                                    }
+
+                                    @keyframes border-flash-alt {
+                                        0% {
+                                            border-color: #00ffee;
+                                        }
+
+                                        25% {
+                                            border-color: #ff00cc;
+                                        }
+
+                                        50% {
+                                            border-color: #aaff00;
+                                        }
+
+                                        75% {
+                                            border-color: #ff6600;
+                                        }
+
+                                        100% {
+                                            border-color: #00ffee;
+                                        }
+                                    }
+
+                                    @media (max-width: 768px) {
+                                        .marquee-track-alt img {
+                                            width: 120px;
+                                            height: 120px;
+                                        }
+                                    }
+
+                                    @media (max-width: 480px) {
+                                        .marquee-track-alt img {
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-66175a87 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66175a87" data-element_type="section" id="socials">
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6e490bb9" data-id="6e490bb9" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-72bb7a83 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="72bb7a83" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">GET YOUR PFP &amp;HELP</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-17334373 elementor-widget__width-inherit animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="17334373" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">DOMINATE THE WORLD...</h2>
+                            </div>
+                            <div class="elementor-element elementor-element-1a8e236c elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="1a8e236c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+                                <p class="elementor-heading-title elementor-size-default">With THOUSANDS upon THOUSANDS to choose from, pick your FSJAL &amp;push the OG higher than ever before.</p>
+                            </div>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-7d1f32dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7d1f32dc" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-59692f4c" data-id="59692f4c" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-5c328eed elementor-invisible elementor-widget elementor-widget-image" data-id="5c328eed" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="297" height="277" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_3cfe491d_df20110725-22047-1u9eayp.png" class="elementor-animation-shrink attachment-large size-large wp-image-67" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-23d46087" data-id="23d46087" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-6a81c591 elementor-invisible elementor-widget elementor-widget-image" data-id="6a81c591" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="299" height="276" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_020c452f_eda.png" class="elementor-animation-shrink attachment-large size-large wp-image-68" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-349051d4" data-id="349051d4" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-7ec0424 elementor-invisible elementor-widget elementor-widget-image" data-id="7ec0424" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="299" height="276" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_3a7794e4_52b.png" class="elementor-animation-shrink attachment-large size-large wp-image-65" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-492240c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="492240c6" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-743b2f76" data-id="743b2f76" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-49e77f36 elementor-invisible elementor-widget elementor-widget-image" data-id="49e77f36" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="268" height="256" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_915dc712_Kratos20110725-22047-ge51x2.png" class="elementor-animation-shrink attachment-large size-large wp-image-69" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-738d3670" data-id="738d3670" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-75e30a2a elementor-invisible elementor-widget elementor-widget-image" data-id="75e30a2a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="601" height="550" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_818eb773_45f.jpg" class="elementor-animation-shrink attachment-large size-large wp-image-76" alt="" srcset="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_818eb773_45f.jpg 601w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_818eb773_45f-300x275.jpg 300w" sizes="(max-width: 601px) 100vw, 601px"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-29c43ddf" data-id="29c43ddf" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-1a342d98 elementor-invisible elementor-widget elementor-widget-image" data-id="1a342d98" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:700}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="290" height="275" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_3b37a804_Fsjal_toy_story_alien20110725-22047-140am9l.png" class="elementor-animation-shrink attachment-large size-large wp-image-66" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-43e1e345 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="43e1e345" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3446e7d6" data-id="3446e7d6" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-6bb0c9e3 elementor-invisible elementor-widget elementor-widget-image" data-id="6bb0c9e3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:800}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="299" height="276" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_495abd4a_1313550247001.png" class="elementor-animation-shrink attachment-large size-large wp-image-78" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a6e659b" data-id="1a6e659b" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-2ec34786 elementor-invisible elementor-widget elementor-widget-image" data-id="2ec34786" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:900}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="310" height="276" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_821fe8cd_Fsjal_Mario20110725-22047-gqp8nr.png" class="elementor-animation-shrink attachment-large size-large wp-image-77" alt="" srcset="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_821fe8cd_Fsjal_Mario20110725-22047-gqp8nr.png 310w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_821fe8cd_Fsjal_Mario20110725-22047-gqp8nr-300x267.png 300w" sizes="(max-width: 310px) 100vw, 310px"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7e3cd3f" data-id="7e3cd3f" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-63098e5 elementor-invisible elementor-widget elementor-widget-image" data-id="63098e5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1000}" data-widget_type="image.default">
+                                                <img loading="lazy" decoding="async" width="299" height="276" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_806df63d_8f0.png" class="elementor-animation-shrink attachment-large size-large wp-image-75" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-6e017a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6e017a2" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0f79f7f" data-id="0f79f7f" data-element_type="column">
+                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                            <div class="elementor-element elementor-element-33328b60 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="33328b60" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow-rotate" href="#" target="_blank">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">JOIN US ON X</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="elementor-element elementor-element-5053c729 elementor-widget__width-auto animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="5053c729" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink" href="#" target="_blank">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">JOIN OUR COMMUNITY</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-689d00b4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="689d00b4" data-element_type="section">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3d2702a4" data-id="3d2702a4" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-5a6636f0 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="5a6636f0" data-element_type="widget" data-widget_type="image.default">
+                                <img fetchpriority="high" decoding="async" width="800" height="822" src="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-997x1024.webp" class="attachment-large size-large wp-image-12" alt="" srcset="https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-997x1024.webp 997w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-292x300.webp 292w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original-768x788.webp 768w, https://fsjal.wtf/wp-content/uploads/2025/07/fsjal_original.webp 1200w" sizes="(max-width: 800px) 100vw, 800px"/>
+                            </div>
+                            <div class="elementor-element elementor-element-355df6b2 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="355df6b2" data-element_type="widget" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">FSJAL</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-69738d2" data-id="69738d2" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-86e2bc7 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="86e2bc7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="button.default">
+                                <a class="elementor-button elementor-button-link elementor-size-sm" href="#" target="_blank">
+                                    <span class="elementor-button-content-wrapper">
+                                        <span class="elementor-button-icon">
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-50639b10" data-id="50639b10" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-4eb0ef93 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="4eb0ef93" data-element_type="widget" data-widget_type="heading.default">
+                                <h2 class="elementor-heading-title elementor-size-default">INFO@FSJAL.WTF</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script type="speculationrules">
+            {
+                "prefetch": [
+                    {
+                        "source": "document",
+                        "where": {
+                            "and": [
+                                {
+                                    "href_matches": "\/*"
+                                },
+                                {
+                                    "not": {
+                                        "href_matches": [
+                                            "\/wp-*.php",
+                                            "\/wp-admin\/*",
+                                            "\/wp-content\/uploads\/*",
+                                            "\/wp-content\/*",
+                                            "\/wp-content\/plugins\/*",
+                                            "\/wp-content\/themes\/hello-biz\/*",
+                                            "\/*\\?(.+)"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "not": {
+                                        "selector_matches": "a[rel~=\"nofollow\"]"
+                                    }
+                                },
+                                {
+                                    "not": {
+                                        "selector_matches": ".no-prefetch, .no-prefetch a"
+                                    }
+                                }
+                            ]
+                        },
+                        "eagerness": "conservative"
+                    }
+                ]
+            }</script>
+        <script>
+            const lazyloadRunObserver = () => {
+                const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+                const lazyloadBackgroundObserver = new IntersectionObserver( (entries) => {
+                    entries.forEach( (entry) => {
+                        if (entry.isIntersecting) {
+                            let lazyloadBackground = entry.target;
+                            if (lazyloadBackground) {
+                                lazyloadBackground.classList.add('e-lazyloaded');
+                            }
+                            lazyloadBackgroundObserver.unobserve(entry.target);
+                        }
+                    }
+                    );
+                }
+                ,{
+                    rootMargin: '200px 0px 200px 0px'
+                });
+                lazyloadBackgrounds.forEach( (lazyloadBackground) => {
+                    lazyloadBackgroundObserver.observe(lazyloadBackground);
+                }
+                );
+            }
+            ;
+            const events = ['DOMContentLoaded', 'elementor/lazyload/observe', ];
+            events.forEach( (event) => {
+                document.addEventListener(event, lazyloadRunObserver);
+            }
+            );
+        </script>
+        <script id="custom-script-js-extra">
+            var wpdata = {
+                "object_id": "7",
+                "site_url": "https:\/\/fsjal.wtf"
+            };
+        </script>
+        <script src="https://fsjal.wtf/wp-content/plugins/wp-meta-and-date-remover/assets/js/inspector.js?ver=1.1" id="custom-script-js"></script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.30.3" id="elementor-webpack-runtime-js"></script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.30.3" id="elementor-frontend-modules-js"></script>
+        <script src="https://fsjal.wtf/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+        <script id="elementor-frontend-js-before">
+            var elementorFrontendConfig = {
+                "environmentMode": {
+                    "edit": false,
+                    "wpPreview": false,
+                    "isScriptDebug": false
+                },
+                "i18n": {
+                    "shareOnFacebook": "Share on Facebook",
+                    "shareOnTwitter": "Share on Twitter",
+                    "pinIt": "Pin it",
+                    "download": "Download",
+                    "downloadImage": "Download image",
+                    "fullscreen": "Fullscreen",
+                    "zoom": "Zoom",
+                    "share": "Share",
+                    "playVideo": "Play Video",
+                    "previous": "Previous",
+                    "next": "Next",
+                    "close": "Close",
+                    "a11yCarouselPrevSlideMessage": "Previous slide",
+                    "a11yCarouselNextSlideMessage": "Next slide",
+                    "a11yCarouselFirstSlideMessage": "This is the first slide",
+                    "a11yCarouselLastSlideMessage": "This is the last slide",
+                    "a11yCarouselPaginationBulletMessage": "Go to slide"
+                },
+                "is_rtl": false,
+                "breakpoints": {
+                    "xs": 0,
+                    "sm": 480,
+                    "md": 768,
+                    "lg": 1025,
+                    "xl": 1440,
+                    "xxl": 1600
+                },
+                "responsive": {
+                    "breakpoints": {
+                        "mobile": {
+                            "label": "Mobile Portrait",
+                            "value": 767,
+                            "default_value": 767,
+                            "direction": "max",
+                            "is_enabled": true
+                        },
+                        "mobile_extra": {
+                            "label": "Mobile Landscape",
+                            "value": 880,
+                            "default_value": 880,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "tablet": {
+                            "label": "Tablet Portrait",
+                            "value": 1024,
+                            "default_value": 1024,
+                            "direction": "max",
+                            "is_enabled": true
+                        },
+                        "tablet_extra": {
+                            "label": "Tablet Landscape",
+                            "value": 1200,
+                            "default_value": 1200,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "laptop": {
+                            "label": "Laptop",
+                            "value": 1366,
+                            "default_value": 1366,
+                            "direction": "max",
+                            "is_enabled": false
+                        },
+                        "widescreen": {
+                            "label": "Widescreen",
+                            "value": 2400,
+                            "default_value": 2400,
+                            "direction": "min",
+                            "is_enabled": false
+                        }
+                    },
+                    "hasCustomBreakpoints": false
+                },
+                "version": "3.30.3",
+                "is_static": false,
+                "experimentalFeatures": {
+                    "e_font_icon_svg": true,
+                    "additional_custom_breakpoints": true,
+                    "e_optimized_markup": true,
+                    "theme_builder_v2": true,
+                    "e_element_cache": true,
+                    "home_screen": true,
+                    "global_classes_should_enforce_capabilities": true,
+                    "cloud-library": true,
+                    "e_opt_in_v4_page": true
+                },
+                "urls": {
+                    "assets": "https:\/\/fsjal.wtf\/wp-content\/plugins\/elementor\/assets\/",
+                    "ajaxurl": "https:\/\/fsjal.wtf\/wp-admin\/admin-ajax.php",
+                    "uploadUrl": "https:\/\/fsjal.wtf\/wp-content\/uploads"
+                },
+                "nonces": {
+                    "floatingButtonsClickTracking": "d1e489b456"
+                },
+                "swiperClass": "swiper",
+                "settings": {
+                    "page": [],
+                    "editorPreferences": []
+                },
+                "kit": {
+                    "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                    "global_image_lightbox": "yes",
+                    "lightbox_enable_counter": "yes",
+                    "lightbox_enable_fullscreen": "yes",
+                    "lightbox_enable_zoom": "yes",
+                    "lightbox_enable_share": "yes",
+                    "lightbox_title_src": "title",
+                    "lightbox_description_src": "description"
+                },
+                "post": {
+                    "id": 7,
+                    "title": "FSJAL",
+                    "excerpt": "",
+                    "featuredImage": false
+                }
+            };
+        </script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.30.3" id="elementor-frontend-js"></script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.30.1" id="elementor-pro-webpack-runtime-js"></script>
+        <script src="https://fsjal.wtf/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+        <script src="https://fsjal.wtf/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+        <script id="wp-i18n-js-after">
+            wp.i18n.setLocaleData({
+                'text direction\u0004ltr': ['ltr']
+            });
+        </script>
+        <script id="elementor-pro-frontend-js-before">
+            var ElementorProFrontendConfig = {
+                "ajaxurl": "https:\/\/fsjal.wtf\/wp-admin\/admin-ajax.php",
+                "nonce": "d67c80f8f1",
+                "urls": {
+                    "assets": "https:\/\/fsjal.wtf\/wp-content\/plugins\/elementor-pro\/assets\/",
+                    "rest": "https:\/\/fsjal.wtf\/wp-json\/"
+                },
+                "settings": {
+                    "lazy_load_background_images": true
+                },
+                "popup": {
+                    "hasPopUps": false
+                },
+                "shareButtonsNetworks": {
+                    "facebook": {
+                        "title": "Facebook",
+                        "has_counter": true
+                    },
+                    "twitter": {
+                        "title": "Twitter"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "has_counter": true
+                    },
+                    "pinterest": {
+                        "title": "Pinterest",
+                        "has_counter": true
+                    },
+                    "reddit": {
+                        "title": "Reddit",
+                        "has_counter": true
+                    },
+                    "vk": {
+                        "title": "VK",
+                        "has_counter": true
+                    },
+                    "odnoklassniki": {
+                        "title": "OK",
+                        "has_counter": true
+                    },
+                    "tumblr": {
+                        "title": "Tumblr"
+                    },
+                    "digg": {
+                        "title": "Digg"
+                    },
+                    "skype": {
+                        "title": "Skype"
+                    },
+                    "stumbleupon": {
+                        "title": "StumbleUpon",
+                        "has_counter": true
+                    },
+                    "mix": {
+                        "title": "Mix"
+                    },
+                    "telegram": {
+                        "title": "Telegram"
+                    },
+                    "pocket": {
+                        "title": "Pocket",
+                        "has_counter": true
+                    },
+                    "xing": {
+                        "title": "XING",
+                        "has_counter": true
+                    },
+                    "whatsapp": {
+                        "title": "WhatsApp"
+                    },
+                    "email": {
+                        "title": "Email"
+                    },
+                    "print": {
+                        "title": "Print"
+                    },
+                    "x-twitter": {
+                        "title": "X"
+                    },
+                    "threads": {
+                        "title": "Threads"
+                    }
+                },
+                "facebook_sdk": {
+                    "lang": "en_US",
+                    "app_id": ""
+                },
+                "lottie": {
+                    "defaultAnimationUrl": "https:\/\/fsjal.wtf\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+                }
+            };
+        </script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.30.1" id="elementor-pro-frontend-js"></script>
+        <script src="https://fsjal.wtf/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.30.1" id="pro-elements-handlers-js"></script>
+    </body>
+</html>
+<!-- Page cached by LiteSpeed Cache 7.3 on 2025-08-04 03:37:59 -->
